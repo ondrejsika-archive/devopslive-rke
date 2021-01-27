@@ -1,0 +1,15 @@
+# System
+.DS_Store
+
+# Terraform
+.terraform
+terraform.tfvars
+*.tfplan
+*.tfstate
+*backup
+*.log
+.terraform.tfstate.lock.info
+
+# RKE
+*.rkestate
+kube_config_cluster.yml
