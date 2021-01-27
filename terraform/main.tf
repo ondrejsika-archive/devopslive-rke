@@ -15,3 +15,10 @@ module "rke1" {
   cluster_no = 1
   node_count = 6
 }
+
+module "rke2" {
+  source = "./modules/rke-nodes-and-lb"
+  ssh_key = data.digitalocean_ssh_key.main
+  cluster_no = 2
+  node_count = 3
+}
